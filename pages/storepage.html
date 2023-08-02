@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main>
+      <section class="storepage container section-spacing">
+        <h2 class="heading flex font-bold text-2xl">門市據點</h2>
+        <div class="input-field flex items-center">
+          <label class="text-lg" for="area">選擇地區</label>
+          <select class="w-100" id="area" name="area">
+            <option value="Taipei">台北中山旗艦店</option>
+            <option value="Taichung">台北綠園店</option>
+            <option value="Kaohsiung">台中清水旗艦店</option>
+          </select>
+        </div>
+        <div class="store-info flex">
+          <div class="card flex">
+            <img class="img"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+              alt="台北中山旗艦店">
+
+            <div class="text">
+              <h3 class="name text-lg">台北中山旗艦店</h3>
+              <ul class="info">
+                <li>
+                  <a class="flex text-md" href="tel:02-000-1234">
+                    <span class="material-symbols-outlined">
+                      call
+                    </span>
+                    電話：(02)000-1234
+                  </a>
+                </li>
+                <li class="flex text-md">
+                  <span class="material-symbols-outlined">
+                    schedule
+                  </span>
+                  營業時間：10:00-21:00
+                </li>
+                <li class="flex text-md">
+                  <span class="material-symbols-outlined">
+                    location_on
+                  </span>
+                  地址：台北市中山區南京東路25巷2-1號
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3640.40605792089!2d120.6652766!3d24.1574881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d784543c9f9%3A0x1e1856ead20202aa!2z5ZyL56uL6Ieq54S256eR5a245Y2a54mp6aSo56ys5LiJ5YGc6LuK5aC077yI6KW_5bGv6Lev77yJ!5e0!3m2!1szh-TW!2stw!4v1690788392112!5m2!1szh-TW!2stw"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

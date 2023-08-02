@@ -1,0 +1,124 @@
+.storepage {
+  .heading {
+    margin: 16px 0 32px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0px;
+      height: 72px;
+      border: 4px solid $color-light-red;
+      margin-right: 16px;
+    }
+  }
+
+  .input-field {
+    label {
+      margin-right: 16px;
+    }
+    select {
+      border: 1px solid #ced4da;
+      max-width: 304px;
+      font-size: 18px;
+      height: 38px;
+    }
+  }
+  .store-info {
+    margin-top: 40px;
+  }
+
+  .card {
+    width: 41.667%;
+    margin-right: 24px;
+    margin-bottom: 48px;
+    flex-direction: column;
+    .name {
+      padding: 8px 24px;
+      border: 1px solid #00000020;
+    }
+    .info {
+      padding: 16px 24px 8px;
+      border: 1px solid #00000020;
+      li {
+        margin-bottom: 8px;
+      }
+      .material-symbols-outlined {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 比例的高度計算方式 (9 / 16) * 100% */
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .storepage {
+    .store-info {
+      flex-direction: column;
+    }
+    .card {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      flex-direction: row;
+      align-items: flex-start;
+      .img {
+        width: 50%;
+        margin-right: 24px;
+      }
+      .text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .storepage {
+    &.section-spacing {
+      padding-bottom: 40px;
+    }
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .heading {
+      margin-top: 0;
+      margin-bottom: 24px;
+      &::before {
+        height: 36px;
+      }
+    }
+    .input-field {
+      label {
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+    }
+
+    .card {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 24px;
+      flex-direction: column;
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+      .img {
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+      }
+    }
+  }
+}

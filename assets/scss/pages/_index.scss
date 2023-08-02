@@ -1,0 +1,288 @@
+.section-spacing {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: $color-lighter-red;
+  color: #fff;
+}
+
+.banner {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 188px 0;
+
+  .text {
+    text-align: right;
+  }
+  .btn {
+    margin-top: 4px;
+  }
+}
+
+.introduction {
+  background-color: #fbf2f2;
+  .heading {
+    margin-bottom: 24px;
+  }
+  .cards {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .card {
+    width: 25%;
+    padding: 0 12px;
+    .title {
+      margin-bottom: 16px;
+    }
+    .icon {
+      margin-bottom: 16px;
+      text-align: center;
+      .material-symbols-outlined {
+        font-size: 84px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.classic-series {
+  .heading {
+    margin-bottom: 48px;
+  }
+  .cards {
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+  .card {
+    width: 33.33%;
+    padding: 0 12px;
+  }
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    margin-top: 8px;
+  }
+}
+
+.co-branding {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .heading {
+    margin-bottom: 48px;
+  }
+  .card {
+    width: 50%;
+    background-color: white;
+    margin-bottom: 24px;
+    img {
+      width: 100%;
+    }
+    .title {
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      margin: 8px 0;
+    }
+  }
+}
+
+.recommend {
+  .heading {
+    margin-bottom: 48px;
+  }
+
+  .card {
+    width: calc(25% - 18px);
+    margin-right: 24px;
+    margin-bottom: 24px;
+    background-color: white;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+    }
+    .text {
+      min-height: 205px;
+      padding: 16px;
+      flex-direction: column;
+      .name {
+        margin-bottom: 8px;
+      }
+      .date {
+        margin-top: auto;
+        font-size: 14px;
+        color: #707070;
+      }
+    }
+  }
+}
+
+.contact {
+  background: #fbf2f2;
+  .container {
+    max-width: 636px;
+  }
+  .heading {
+    margin-bottom: 48px;
+  }
+  .description {
+    margin-bottom: 24px;
+  }
+  .form-input {
+    margin: 8px 0 16px;
+    padding: 6px 12px;
+    border: 1px solid #000;
+    background-color: #fbf2f2;
+  }
+  .form-feedback {
+    min-height: 136px;
+  }
+  .form-checkbox {
+    border: 2px solid #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    margin: 0;
+    margin-right: 4px;
+    margin-top: 2px;
+  }
+  .form-btn {
+    display: block;
+    border: none;
+    max-width: 416px;
+    margin: 48px auto 0;
+    padding: 16px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    .card {
+      width: 50%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .classic-series {
+    max-width: 416px;
+    .card {
+      width: 100%;
+    }
+  }
+
+  .co-branding {
+    .card {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .recommend {
+    .card {
+      width: calc(50% - 12px);
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(odd) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .social-icon {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .banner {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    padding: 144px 0;
+    .heading {
+      font-size: 24px;
+    }
+    .description {
+      font-size: 16px;
+    }
+    .btn {
+      margin-top: 8px;
+      font-size: 20px;
+    }
+  }
+
+  .introduction {
+    .card {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .classic-series {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .heading {
+      margin-bottom: 24px;
+    }
+  }
+
+  .co-branding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .heading {
+      margin-bottom: 24px;
+    }
+  }
+
+  .recommend {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .heading {
+      margin-bottom: 24px;
+    }
+    .cards {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .card {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .heading {
+      margin-bottom: 24px;
+    }
+    .description {
+      font-size: 16px;
+    }
+    .form-btn {
+      margin: 24px auto 0;
+    }
+  }
+}
