@@ -32,6 +32,9 @@
     margin-right: 24px;
     margin-bottom: 48px;
     flex-direction: column;
+    .img {
+      object-fit: cover;
+    }
     .name {
       padding: 8px 24px;
       border: 1px solid #00000020;
@@ -51,7 +54,7 @@
   .map-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 比例的高度計算方式 (9 / 16) * 100% */
+    padding-bottom: 40%;
     iframe {
       position: absolute;
       width: 100%;
@@ -72,7 +75,6 @@
       margin-left: 0;
       margin-right: 0;
       flex-direction: row;
-      align-items: flex-start;
       .img {
         width: 50%;
         margin-right: 24px;
@@ -80,6 +82,9 @@
       .text {
         width: 50%;
       }
+    }
+    .map-container {
+      padding-bottom: 56.25%;
     }
   }
 }

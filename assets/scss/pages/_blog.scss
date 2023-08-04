@@ -13,7 +13,6 @@
   }
   .card {
     display: flex;
-    align-items: start;
     margin-bottom: 60px;
 
     .img {
@@ -44,6 +43,15 @@
   .blog {
     .card {
       margin-bottom: 24px;
+      align-items: start;
+      .text {
+        display: -webkit-box;
+        margin: 0 auto;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
       &:last-child {
         margin-bottom: 80px;
       }
