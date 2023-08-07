@@ -1,3 +1,9 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -7,126 +13,4 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-}
-
-html,
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-}
-
-.text-white {
-  color: #fff;
-}
-
-.text-red {
-  color: $color-red;
-}
-
-.text-light-red {
-  color: $color-light-red;
-}
-
-.text-lighter-red {
-  color: $color-lighter-red;
-}
-
-.text-green {
-  color: $color-green;
-}
-
-.text-base {
-  font-size: 16px;
-}
-
-.text-md {
-  font-size: 20px;
-}
-
-.text-lg {
-  font-size: 24px;
-}
-
-.text-xl {
-  font-size: 36px;
-}
-
-.text-2xl {
-  font-size: 48px;
-}
-
-.text-3xl {
-  font-size: 64px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.items-start {
-  align-items: flex-start;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.block {
-  display: block;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
