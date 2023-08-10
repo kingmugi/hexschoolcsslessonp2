@@ -18,6 +18,7 @@
     .img {
       width: 50%;
       margin-right: 24px;
+      object-fit: cover;
     }
     .body {
       width: 50%;
@@ -51,6 +52,12 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .link {
+        font-size: 16px;
+        font-weight: normal;
+        color: #000;
+        text-transform: lowercase;
       }
       &:last-child {
         margin-bottom: 80px;

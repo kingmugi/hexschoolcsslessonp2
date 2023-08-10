@@ -147,6 +147,7 @@
   }
   .form-feedback {
     min-height: 136px;
+    resize: none;
   }
   .form-checkbox {
     border: 2px solid #000;
@@ -166,18 +167,20 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .classic-series {
+    max-width: 416px;
+    .card {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .introduction {
     .card {
       width: 50%;
       margin-bottom: 24px;
-    }
-  }
-
-  .classic-series {
-    max-width: 416px;
-    .card {
-      width: 100%;
     }
   }
 
